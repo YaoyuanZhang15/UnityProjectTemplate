@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 208709714}
   - component: {fileID: 208709713}
   - component: {fileID: 208709712}
+  - component: {fileID: 208709716}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -362,6 +363,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &208709716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208709711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2420b9c8a7c9be54daefcb6fef179b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleTextbox: {fileID: 1844289238}
+  creditsTextbox: {fileID: 199785635}
+  copyrightTextbox: {fileID: 1087245048}
+  messageTextbox: {fileID: 0}
 --- !u!1 &374699944
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +887,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1369635497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 208709716}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: OnGameExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1369635497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1239,7 +1268,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.9150943, g: 0.22877358, b: 0.22877358, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1259,7 +1288,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1903631136}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 208709716}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: OnGameStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1903631136
 MonoBehaviour:
   m_ObjectHideFlags: 0
