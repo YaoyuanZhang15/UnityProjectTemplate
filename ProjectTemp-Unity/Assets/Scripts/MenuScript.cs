@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 public class MenuScript : MonoBehaviour
 {
     GameManager gm; //refernce to game manager
@@ -12,6 +13,8 @@ public class MenuScript : MonoBehaviour
     public TMP_Text copyrightTextbox;
     public TMP_Text messageTextbox;
 
+    [SerializeField]
+    private Button startButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +24,8 @@ public class MenuScript : MonoBehaviour
         if (creditsTextbox) { creditsTextbox.text = gm.gameCredits; }
         if (copyrightTextbox) { copyrightTextbox.text = gm.copyrightDate; }
         if (messageTextbox) { messageTextbox.text = gm.endMsg; }
+     
+        startButton.onClick.AddListener(OnGameStart);
     }
 
     public void OnGameStart()
